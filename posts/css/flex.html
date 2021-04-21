@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>css之flex布局 | s6-ht的技术博客</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/images/logo.jpg">
+    <meta name="description" content="好好学习，天天向上">
+    
+    <link rel="preload" href="/assets/css/0.styles.1a3ac8ec.css" as="style"><link rel="preload" href="/assets/js/app.077a7c60.js" as="script"><link rel="preload" href="/assets/js/2.cd68b816.js" as="script"><link rel="preload" href="/assets/js/11.83a4083c.js" as="script"><link rel="prefetch" href="/assets/js/10.677955d0.js"><link rel="prefetch" href="/assets/js/12.50102bd1.js"><link rel="prefetch" href="/assets/js/13.669121c3.js"><link rel="prefetch" href="/assets/js/14.960aa092.js"><link rel="prefetch" href="/assets/js/15.e6fe500e.js"><link rel="prefetch" href="/assets/js/16.4dfc0836.js"><link rel="prefetch" href="/assets/js/17.513764ac.js"><link rel="prefetch" href="/assets/js/18.895a1653.js"><link rel="prefetch" href="/assets/js/19.77c06395.js"><link rel="prefetch" href="/assets/js/20.eb82c505.js"><link rel="prefetch" href="/assets/js/21.aea58482.js"><link rel="prefetch" href="/assets/js/22.47fee7b2.js"><link rel="prefetch" href="/assets/js/23.35c81538.js"><link rel="prefetch" href="/assets/js/24.9c04cf66.js"><link rel="prefetch" href="/assets/js/25.8164c328.js"><link rel="prefetch" href="/assets/js/26.51aeac68.js"><link rel="prefetch" href="/assets/js/27.9916ed66.js"><link rel="prefetch" href="/assets/js/28.e8c9c2ed.js"><link rel="prefetch" href="/assets/js/29.68c446e3.js"><link rel="prefetch" href="/assets/js/3.ae2eb2fd.js"><link rel="prefetch" href="/assets/js/30.4e88fac8.js"><link rel="prefetch" href="/assets/js/4.09fd2c39.js"><link rel="prefetch" href="/assets/js/5.fc791712.js"><link rel="prefetch" href="/assets/js/6.ffe6f60a.js"><link rel="prefetch" href="/assets/js/7.4bcf017a.js"><link rel="prefetch" href="/assets/js/8.8e8fcbe9.js"><link rel="prefetch" href="/assets/js/9.7c96a30a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1a3ac8ec.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/logo.jpg" alt="s6-ht的技术博客" class="logo"> <span class="site-name can-hide">s6-ht的技术博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/posts/css/" class="nav-link router-link-active">
+  Css
+</a></div><div class="nav-item"><a href="/posts/js/" class="nav-link">
+  Javascript
+</a></div><div class="nav-item"><a href="/posts/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/posts/algorithm/" class="nav-link">
+  算法
+</a></div><div class="nav-item"><a href="https://s6-ht.github.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/posts/css/" class="nav-link router-link-active">
+  Css
+</a></div><div class="nav-item"><a href="/posts/js/" class="nav-link">
+  Javascript
+</a></div><div class="nav-item"><a href="/posts/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/posts/algorithm/" class="nav-link">
+  算法
+</a></div><div class="nav-item"><a href="https://s6-ht.github.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>文章目录</span> <!----></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>webpack</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="_1-概述"><a href="#_1-概述" class="header-anchor">#</a> 1. 概述</h3> <p>flex布局意为弹性布局，为一维布局。它的属性主要由容器属性和项目属性构成。
+容器属性包括：
+1. justify-content
+2. align-items
+3. align-content
+4. flex-direction
+5. flex-wrap
+6. flex-flow
+项目属性包括：
+1. flex-grow
+2. flex-shrink
+3. flex-basis
+4. align-self
+5. flex
+6. order</p> <h3 id="_2-容器属性"><a href="#_2-容器属性" class="header-anchor">#</a> 2. 容器属性</h3> <ol><li>justify-content 决定项目在主轴（水平）上的排列方式，取值为：</li></ol> <div class="language-css extra-class"><pre class="language-css"><code>flex-start
+center
+flex-end
+<span class="token property">space-bewteen</span><span class="token punctuation">:</span> 两端对齐，轴线之间的间隔平均分布
+<span class="token property">space-evenly</span><span class="token punctuation">:</span> 项目之间间隔均匀分布
+space-around： 项目两侧的间距一样，因此两个项目中间的间距是两边的两倍
+</code></pre></div><p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/08d629f788fc40d094b4fa683d8581f9~tplv-k3u1fbpfcp-zoom-1.image" alt=""> <img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/dbac9a3fcb3f449387ff50a559c1681d~tplv-k3u1fbpfcp-zoom-1.image" alt=""> <img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5452af0a6e6e4cce99202f123665a7c0~tplv-k3u1fbpfcp-zoom-1.image" alt=""> <img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1c6229d623424627bfd62045a9b24a9a~tplv-k3u1fbpfcp-zoom-1.image" alt=""> <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a1dce52001e841bc961f1943b33c2cac~tplv-k3u1fbpfcp-zoom-1.image" alt=""> <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b5de9b3fde074ad6b1e2eb94cabe22a6~tplv-k3u1fbpfcp-zoom-1.image" alt="">
+2. align-items 决定项目在交叉轴（垂直）方向的排列方式</p> <div class="language-css extra-class"><pre class="language-css"><code>flex-start：交叉轴的起点对齐
+<span class="token property">center</span><span class="token punctuation">:</span> 交叉轴的中心对齐
+<span class="token property">flex-end</span><span class="token punctuation">:</span> 交叉轴的终点对齐
+<span class="token property">baseline</span><span class="token punctuation">:</span> 基于第一行文字的基线对齐
+<span class="token property">stretch</span><span class="token punctuation">:</span> 默认值，如果项目未设置高度或者为auto，则将占满整个容器
+</code></pre></div><p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/858bc1d648b3400aa424864eacb4b009~tplv-k3u1fbpfcp-zoom-1.image" alt="">
+3. align-content 在垂直方向，定义多根轴线的排列方式，只有一根轴线时不起作用</p> <div class="language-css extra-class"><pre class="language-css"><code>flex-start
+center
+flex-end
+space-bewteen
+space-around
+space-evenly
+stretch：默认值，如果项目未设置高度或者为auto，则将占满整个容器
+</code></pre></div><ol start="4"><li>flex-direction 定义项目的排列方向（主轴方向）</li></ol> <div class="language-css extra-class"><pre class="language-css"><code><span class="token property">row</span><span class="token punctuation">:</span> 主轴为水平方向，起点在左端
+column
+row-reverse
+column-reverse
+</code></pre></div><p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/88d848c6712a4063a6f0a36440765555~tplv-k3u1fbpfcp-zoom-1.image" alt=""> <img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4eadd57b266446a88bf9f521f04b8a96~tplv-k3u1fbpfcp-zoom-1.image" alt=""> <img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/41967377050e472f88614b5e77871392~tplv-k3u1fbpfcp-zoom-1.image" alt=""> <img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5de393ff395d47ffabd1000c21d649eb~tplv-k3u1fbpfcp-zoom-1.image" alt="">
+5. flex-wrap 如果一条轴线排不下，怎么换行</p> <div class="language-css extra-class"><pre class="language-css"><code>wrap
+nowrap
+<span class="token property">wrap-reverse</span><span class="token punctuation">:</span> 换行，第一行在下方
+</code></pre></div><p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/dd8c46ced6664109bf0e98bdd5f824a9~tplv-k3u1fbpfcp-zoom-1.image" alt=""> <img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6ca3dfb6c11a43c0ac064d571c0f718e~tplv-k3u1fbpfcp-zoom-1.image" alt="">
+6. flex-flow  为flex-direction 和flex-wrap的简写形式，默认<code>row nowrap</code></p> <h3 id="_3-项目属性"><a href="#_3-项目属性" class="header-anchor">#</a> 3. 项目属性</h3> <ol><li>flex-grow</li></ol> <ul><li>在有剩余空间时，项目的放大比例，默认为0, 即不放大。如果一个项目放大，其余的项目都不当大，则该项目会独占所有剩余空间；否则按照剩余空间比例进行分配。</li></ul> <ol start="2"><li>flex-shrink</li></ol> <ul><li>在空间不足时，项目的缩小比例，默认为1, 空间不足时，项目将缩小。如果一个项目的<code>flex-shrink: 0</code>，其余项目的缩小比例为1，则该项目不缩小，其他项目等比缩小。</li></ul> <ol start="3"><li>flex-basis</li></ol> <ul><li>定义了在计算剩余空间之前，项目所占的主轴空间，默认为<code>auto</code>, 即项目的本来大小。浏览器根据这个属性，计算是否有剩余空间。</li></ul> <ol start="4"><li>align-self</li></ol> <ul><li>定义了项目在交叉轴上的排列方式，覆盖align-items属性</li></ul> <div class="language-css extra-class"><pre class="language-css"><code>auto
+flex-start
+flex-end
+center
+baseline
+stretch
+</code></pre></div><ol start="5"><li>flex</li></ol> <ul><li>flex-grow、flex-shrink、flex-basis 的简写，默认为0 1 auto；</li> <li>flex: 1(1 1 auto) | none(0 0 auto)</li></ul> <ol start="6"><li>order</li></ol> <ul><li>按照数字大小进行排列，数字小的排在前面</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.077a7c60.js" defer></script><script src="/assets/js/2.cd68b816.js" defer></script><script src="/assets/js/11.83a4083c.js" defer></script>
+  </body>
+</html>
