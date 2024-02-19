@@ -1,0 +1,10 @@
+{
+  "name": "sloth",
+  "short_name": "sloth",
+  "description": "sloth blog site",
+  "start_url": "/index.html",
+  "icons": [],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
